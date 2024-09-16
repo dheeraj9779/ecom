@@ -1,0 +1,173 @@
+{
+  "user": [
+    {
+      "name": "Dheeraj Sharma",
+      "mobile": "1234567890",
+      "age": "27",
+      "dob": "1998-01-08",
+      "email": "dheeraj@gmail.com",
+      "password": "dheeraj123",
+      "address": {
+        "addLine1": "Shakarpur",
+        "addLine2": "laxmi nagar",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110333"
+      },
+      "language": [
+        "English",
+        "Hindi",
+        "German"
+      ],
+      "gender": "Male",
+      "aboutYou": "I am a brown boy",
+      "uploadPhoto": "",
+      "agreetc": true,
+      "role": "Admin",
+      "id": "1"
+    },
+    {
+      "name": "Ankit",
+      "mobile": "1234567890",
+      "age": "29",
+      "dob": "1998-01-08",
+      "email": "ankit@gmail.com",
+      "password": "ankit123",
+      "address": {
+        "addLine1": "Shakarpur",
+        "addLine2": "laxmi nagar",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110333"
+      },
+      "language": [
+        "English",
+        "Hindi",
+        "German"
+      ],
+      "gender": "Male",
+      "aboutYou": "I am a brown boy",
+      "uploadPhoto": "",
+      "agreetc": true,
+      "role": "buyer",
+      "id": "2"
+    },
+    {
+      "name": "Manu",
+      "mobile": "9876543210",
+      "age": "29",
+      "dob": "1998-01-08",
+      "email": "manu@gmail.com",
+      "password": "manu123",
+      "address": {
+        "addLine1": "Shakarpur",
+        "addLine2": "laxmi nagar",
+        "city": "Mumbai",
+        "state": "MH",
+        "pincode": "110333"
+      },
+      "language": [
+        "English",
+        "Hindi",
+        "German"
+      ],
+      "gender": "Male",
+      "aboutYou": "I am a brown boy",
+      "uploadPhoto": "",
+      "agreetc": true,
+      "role": "seller",
+      "id": "3"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "plastic box",
+      "uploadPhoto": "https://media.istockphoto.com/id/974883222/photo/plastic-food-containers-on-a-wooden-table.jpg?s=2048x2048&w=is&k=20&c=C4zT1-Bc_39QeHiqiDjfp-tD0FVY33JIUBcBlqYoNyg=",
+      "productDesc": "This is really a cool box, and can be used for varying purposes",
+      "mrp": "200",
+      "discount": "100",
+      "status": "publish"
+    },
+    {
+      "id": "2",
+      "name": "steel box",
+      "uploadPhoto": "https://media.istockphoto.com/id/154962345/photo/egg-salad-sandwich-lunch-box.jpg?s=2048x2048&w=is&k=20&c=1y5tKYyXUPVjVRLuZ6ItrnzHXjof7vYU0XiZjm_JnBc=",
+      "productDesc": "This is really a cool box, and can be used for varying purposes",
+      "mrp": "500",
+      "discount": "50",
+      "status": "draft"
+    },
+    {
+      "id": "3",
+      "name": "Rope",
+      "uploadPhoto": "https://media.istockphoto.com/id/183792771/photo/coiled-rope-isolated-on-a-white-background.jpg?s=2048x2048&w=is&k=20&c=8ahTnGU_ip-DyTBYIwZcPjmKpk0QY53uo4kD-wHlcvc=",
+      "productDesc": "This is really a cool box, and can be used for varying purposes",
+      "mrp": "200",
+      "discount": "100",
+      "status": "inactive"
+    },
+    {
+      "id": "4",
+      "name": "Bedsheet",
+      "uploadPhoto": "https://media.istockphoto.com/id/488980558/photo/domestic-bedroom.jpg?s=612x612&w=0&k=20&c=AJAnsC-K1qJD1tGbk647F1hfyaR-9mxaeeEoxN15L7c=",
+      "productDesc": "This is really a cool box, and can be used for varying purposes",
+      "mrp": "200",
+      "discount": "100",
+      "status": "draft"
+    },
+    {
+      "id": "5",
+      "name": "Desk Wooden",
+      "uploadPhoto": "https://media.istockphoto.com/id/941224542/vector/real-wood-table-on-a-white-background.jpg?s=612x612&w=0&k=20&c=SCiVjdgQ9dDPydMHrZYm2RZd0H-iew7uRCmkiNHyRWI=",
+      "productDesc": "This is really a cool box, and can be used for varying purposes",
+      "mrp": "2000",
+      "discount": "300",
+      "status": "publish"
+    },
+    {
+      "id": "6",
+      "name": "Pillow",
+      "uploadPhoto": "https://media.istockphoto.com/id/853973838/photo/closeup-of-new-bed-comforter-with-decorative-pillows-headboard-in-bedroom-in-staging-model.jpg?s=612x612&w=0&k=20&c=GymGYoOgQ_uxlVon8eYlJtGhjQyaT2hL6IEMJNHMVtI=",
+      "productDesc": "This is really a cool box, and can be used for varying purposes",
+      "mrp": "150",
+      "discount": "20",
+      "status": "inactive"
+    },
+    {
+      "id": "7",
+      "name": "Mobile Cover",
+      "uploadPhoto": "https://media.istockphoto.com/id/1163393607/photo/colorful-silicone-cases-for-your-smartphone.jpg?s=612x612&w=0&k=20&c=H145pjydqgXpOO7LSBm2gHMy-ndjaQLscSYz8gYg9h8=",
+      "productDesc": "This is really a cool box, and can be used for varying purposes",
+      "mrp": "500",
+      "discount": "200",
+      "status": "draft"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 7,
+        "name": "Mobile cover",
+        "uploadPhoto": "https://media.istockphoto.com/id/1163393607/photo/colorful-silicone-cases-for-your-smartphone.jpg?s=612x612&w=0&k=20&c=H145pjydqgXpOO7LSBm2gHMy-ndjaQLscSYz8gYg9h8=",
+        "productDesc": "This is really a cool box, and can be used for varying purposes",
+        "mrp": "500",
+        "discount": "200",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Shakarpur",
+        "addLine2": "laxmi nagar",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110333"
+      },
+      "contact": "9765434210",
+      "dateTime": "22/05/2024"
+    }
+  ]
+}

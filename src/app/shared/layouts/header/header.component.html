@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/home']">ECOM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" [routerLink]="['/home']" routerLinkActive="active-tab">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role == 'Admin'">
+          <a class="nav-link" [routerLink]="['/admin-login']" routerLinkActive="active-tab">All Order</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role == 'Admin'">
+          <a class="nav-link" [routerLink]="['/admin/product']" routerLinkActive="active-tab">All Product</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role == 'buyer'">
+          <a class="nav-link" [routerLink]="['/buyer-dashboard']" routerLinkActive="active-tab">Order </a>
+        </li>
+        <li class="nav-item" *ngIf="user_role == 'seller'">
+          <a class="nav-link" [routerLink]="['/seller/product']" routerLinkActive="active-tab">Product</a>
+        </li>
+        <li class="nav-item" *ngIf="user_role == 'Admin'">
+          <a class="nav-link" [routerLink]="['/admin/user']" routerLinkActive="active-tab">Users </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active-tab">Contact us</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">ENG</a></li>
+            <li><a class="dropdown-item" href="#">HIN</a></li>
+
+          </ul>
+        </li> -->
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto" *ngIf="!logged_in">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/sign-in']" routerLinkActive="active-tab" >Sign In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/sign-up']" routerLinkActive="active-tab">Sign Up</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" *ngIf="logged_in">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/my-profile']"><img src="https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg" width="30px" height="30px" class="rounded-circle" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link logout" (click)="logout()"><img src="https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/logout-512.png" width="30px" height="30px" class="rounded-circle" alt=""></a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,103 @@
+<br>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <form [formGroup]="userProfileForm" (ngSubmit)="updateProfile(this.user_id)">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" formControlName="name">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="mobile">Mobile No</label>
+            <input type="text" class="form-control" formControlName="mobile">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" formControlName="age">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="dob">Enter DOB</label>
+            <input type="date" class="form-control" formControlName="dob">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" formControlName="email">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" formControlName="password">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="addLine1">Address</label>
+              <input type="text" class="form-control" formControlName="addLine1">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="addLine2">Address 2</label>
+              <input type="text" class="form-control" formControlName="addLine2">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="city">City</label>
+              <input type="text" class="form-control" formControlName="city">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="state">State</label>
+              <select id="inputState" class="form-control" formControlName="state">
+                <option selected>Choose..</option>
+                <option>Delhi</option>
+                <option>Chandigarh</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="pincode">Pincode</label>
+              <input type="text" class="form-control" formControlName="pincode">
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="language">Language</label>
+            <select class="form-control" formControlName="language">
+              <option>English</option>
+              <option>Hindi</option>
+              <option>German</option>
+              <option>Telugu</option>
+              <option>Bhojpuri</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="exampleFormControlSelect2">Gender</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" formControlName="gender" value="Male">
+              <label class="form-check-label" for="inlineRadio1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" formControlName="gender" value="Female">
+              <label class="form-check-label" for="inlineRadio2">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" formControlName="gender" value="Other">
+              <label class="form-check-label" for="inlineRadio3">Other (disabled)</label>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="aboutYou">Something About You</label>
+            <textarea class="form-control" rows="3" formControlName="aboutYou"></textarea>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="uploadPhoto">Upload Your ProfilePhoto</label>
+            <input type="file" class="form-control-file" formControlName="uploadPhoto">
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-primary" >Update Your Profile</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
